@@ -67,7 +67,7 @@ m.sendMessage(args)
 
   client.on('message', msg => {
     if(msg.content === '$help')
-    msg.reply('Check Your DM :white_check_mark:')
+    msg.reply('شوف خاصك يا حلو :white_check_mark:')
   });
   
   
