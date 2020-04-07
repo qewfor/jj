@@ -1,13 +1,13 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = "$"
-var adminprefix = '$'
+var prefix = "!"
+var adminprefix = '!'
 
 
 //bc
 
 client.on("message", message => {
-    if (message.content.startsWith("$obc")) {
+    if (message.content.startsWith("!obc")) {
                  if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' ');
@@ -23,7 +23,7 @@ client.on("message", message => {
 //bc online
 
 
-  var prefix = "$";
+  var prefix = "!";
 
   client.on("message", message => {
   
@@ -132,7 +132,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : qewfor ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`ملك الحفلة |qewfor`,"http://instagram.com/6sssa")
+client.user.setGame(`Mega Store`,"discord.gg/ma")
 client.user.setStatus("dnd")
 });
 
